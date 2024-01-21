@@ -10,12 +10,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.red,
-        title: const Text("Havapp"),
-      ),
-      body: const Center(
+    return const Scaffold(
+      body: Center(
         child: Text("Work in progress..."),
       ),
     );
