@@ -1,6 +1,6 @@
 # havapp
 
-A new Flutter project.
+A simple weather app built with Flutter.
 
 ## Getting Started
 
