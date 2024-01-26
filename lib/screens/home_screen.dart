@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:havapp/models/weather_model.dart';
 import 'package:havapp/services/weather_service.dart';
 import 'package:lottie/lottie.dart';
+import 'package:havapp/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -67,9 +68,16 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(cityName),
+            Text(
+              cityName,
+            ),
             Lottie.asset(getWeatherAnimation(condition)),
-            Text("${_weather?.temperature.round()} °C"),
+            Text(
+              "${_weather?.temperature.round()} °C",
+              style: const TextStyle(
+                fontSize: temperatureFontSize,
+              ),
+            ),
           ],
         ),
       ),
